@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Pseudoclases CSS</title>
+    <link rel="stylesheet" href="ejSelectores2.css">
+</head>
+
+<body>
+    <!-- Sección principal -->
+    <div id="main-container">
+        <h1>Práctica de Pseudoclases en CSS</h1>
+        <p class="intro">Este es un párrafo de introducción.</p>
+        <p>Otro párrafo para practicar pseudoclases de estructura.</p>
+
+        <!-- Enlaces para pseudoclases relacionadas con enlaces -->
+        <nav>
+            <a href="https://example.com" target="_blank">Enlace externo</a>
+            <a href="#section1">Enlace interno al contenido</a>
+            <a href="https://example.com" class="visited-link">Enlace visitado (prueba manual)</a>
+        </nav>
+
+        <!-- Sección objetivo de un enlace interno -->
+        <section id="section1">
+            <h2>Contenido del Enlace Interno</h2>
+            <p>Texto en la sección objetivo del enlace interno.</p>
+        </section>
+
+        <!-- Formulario para practicar pseudoclases de formularios -->
+        <form>
+            <label for="nombre">Nombre (requerido):</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios"></textarea>
+
+            <label for="edad">Edad (campo opcional):</label>
+            <input type="number" id="edad" name="edad" optional>
+
+            <input type="submit" class="submit-btn" value="Enviar"></input>
+            <input type="submit" class="submit-btn" value="Envío premium" disabled></input>
+        </form>
+
+        <!-- Lista para practicar pseudoclases de estructura -->
+        <ul>
+            <li>Primer elemento de la lista</li>
+            <li>Segundo elemento de la lista</li>
+            <li>Tercer elemento de la lista</li>
+            <li>Cuarto elemento de la lista</li>
+            <li>Quinto elemento de la lista</li>
+            <li>Sexto elemento de la lista</li>
+            <li>Séptimo elemento de la lista</li>
+        </ul>
+
+        <!-- Elementos vacíos y de uso específico -->
+        <div class="empty-container"></div>
+        <p class="no-content"></p>
+
+        <p>Ultimo párrafo</p>
+
+        <!-- Elementos de prueba para pseudoclases de interacción -->
+        <button class="interactive-btn">Haz clic o pasa el cursor</button>
+        <input type="text" placeholder="Escribe algo y enfoca" class="focus-test">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Interacción con el usuario */
+.interactive-btn {
+    background-color: #f0f0f0;
+}
+.interactive-btn:hover {
+    background-color: #e0e0e0;
+}
+.interactive-btn:active {
+    background-color: #d0d0d0;
+}
+.focus-test:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+/* Pseudoclases relacionadas con enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    color: #0056b2;
+}
+a:visited {
+    color: #6c757d;
+}
+
+/* Pseudoclases de estructura del documento */
+ul > li:first-child {
+    border-top: 2px solid black;
+}
+ul > li:last-child {
+    border-bottom: 2px solid black;
+}
+p:first-of-type {
+    border: 2px solid green;
+}
+p:last-of-type {
+    border: 2px solid red;
+}
+ul li:nth-child(4) {
+    color: purple;
+}
+ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+ul li:nth-last-child(odd) {
+    color: #888;
+}
+div:empty, p:empty {
+    border: 1px dotted grey;
+    width: 100px;
+    height: 100px;
+}
+
+/* Pseudoclases de formularios */
+input[type="text"]:enabled {
+    background-color: #fff;
+}
+input[type="text"]:disabled {
+    background-color: red;
+    color: white;
+    cursor: not-allowed;
+}
+input[required] {
+    background-color: #e0e0e0;
+}
+/* Para los campos de validación, necesitarás JavaScript para agregar o quitar clases */
+.invalid {
+    border: 2px solid red;
+}
+.valid {
+    border: 2px solid green;
+}

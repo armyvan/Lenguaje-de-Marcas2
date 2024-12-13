@@ -1,0 +1,18 @@
+ul li{ 
+display:inline-block;
+background-color: rgb(4, 111, 111);
+color: azure;
+padding: 10px;
+margin-left: 3px;
+width: 100;
+}
+ol li{
+    list-style-image: url(flechita\ \(1\).png);
+
+}
+
+.numero li{
+
+    list-style-type: decimal;
+}
+

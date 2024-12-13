@@ -1,0 +1,200 @@
+:root {
+    --verde-claro: #8bc34a;
+    --verde-medio: #558b2f;
+    --verde-oscuro: #33691e;
+    --fondo-claro: #f9fbe7;
+    --texto-principal: #333;
+    --blanco: #ffffff;
+    --hover-claro: #c5e1a5;
+    --fondo-intermedio: #f1f8e9;
+    --verde-suave: #c8e6c9;
+    --fondo-lista: #e8f5e9;
+    --verde-pastel: #f0f4c3;
+    --borde-verde: #aed581;
+    --fondo-footer: #689f38;
+    --sombra-texto: rgba(0, 0, 0, 0.6);
+    --sombra-suave: rgba(0, 0, 0, 0.1);
+    --sombra-intensa: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: #f9fbe7;
+}
+
+header {
+    text-align: center;
+    background-color: var(--verde-claro);
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f9fbe7;
+    border-radius: 12px;
+}
+
+.nav-menu ul {
+    text-align: center;
+    background-color: var(--verde-medio);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius:12px ;
+}
+
+.nav-menu a {
+    color: #e8f5e9;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color:  var(--verde-oscuro);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+main {
+   font-family:Arial, Helvetica, sans-serif; 
+   display: flex;   
+}
+
+.banner {
+    display:inline;
+    padding: 15px;
+}
+
+.content {
+    column-fill: balance;
+    text-align: justify;
+    column-gap: 50px;
+    column-rule: 2px solid var(--green-color);
+    height: 200px;
+    margin: 10px;
+}
+
+.introduction {
+    max-width: 1200px;
+    column-fill: balance;
+    column-count: 3;
+    text-align: justify;
+    column-gap: 50px;
+    column-rule: 2px solid green;
+    height: 150px;
+}
+
+.basic-care {
+    display: flex;
+    background-color:rgb(104, 214, 178);
+    padding: 15px;
+    text-align:start;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.basic-list {
+    background-color:rgb(236, 244, 241);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.tips-flex {
+    display: flex;
+    width: fit-content;
+    height: 90px;
+    margin: 12px;
+    padding: 50px;
+}
+
+.tip-item {
+    
+    background-color: var(--verde-suave);
+    border: 2px solid var(--verde-oscuro);
+
+    border-radius: 12px;
+    border-width: 5px;
+    padding: 10px;
+    height: 100px;
+}
+
+.important-item {
+    background-color: var(--verde-claro);
+    border: 2px solid var(--verde-oscuro);
+    margin: 0.1%;
+    height: 100px;
+    border-radius: 12px;
+    border-width: 5px;
+    color: #ffffff;
+}
+
+.column-container {
+    display: block;
+    padding: 100px;
+    text-align: center;
+    background-color: #c8e6c9;
+    margin: 12px;
+    border-radius: 12px;
+}
+
+.column-article {
+    text-align: center;
+    display: block;
+
+}
+
+.column-container :is(h2, h3) {
+    text-align: center;
+    display: block;
+}
+
+.gallery {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+.plantas-grid {
+    display:flex;
+    border-radius: 10px;
+}
+
+.plant-card {
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px var(--sombra-intensa);
+    border-radius: 10px;
+}
+
+.plant-card :is(p, h3) {
+    display:flexbox;
+    top: 50%; 
+    left: 50%; 
+    padding: 10px; 
+    color: #000000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pothos {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#suculenta {
+    position: relative;
+    width: 100%;
+}
+
+#ficus {
+    position: relative;
+    width: 100%;
+}
+
+footer {
+   background-color:green;
+   padding: 25px;
+   text-align: center;
+   border-radius: 10px;
+}

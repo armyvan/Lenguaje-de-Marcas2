@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Enlaces</title>
+  </head>
+
+  <body>
+    <h1>Introducción a los Enlaces en HTML</h1>
+
+    <p>
+      Los <strong>enlaces</strong>, también conocidos como
+      <em>hipervínculos</em>, permiten a los usuarios navegar entre páginas web
+      o recursos externos. Se crean utilizando la etiqueta
+      <code>&lt;a&gt;</code> (anchor).
+    </p>
+
+    <h2>Estructura básica de un enlace</h2>
+
+    <p>Un enlace en HTML tiene la siguiente estructura básica:</p>
+
+    <code>
+      <a href="https://www.google.com">Enlace externo</a>
+    </code>
+
+    <p>
+      En este caso, el atributo <strong>href</strong> define la URL del destino,
+      y el texto entre las etiquetas <code>&lt;a&gt;</code> indica lo que los
+      usuarios verán como el enlace clicable.
+    </p>
+
+    <h2>Enlaces internos y externos</h2>
+
+    <p>
+      Un enlace <strong>interno</strong> conecta a otra sección dentro del mismo
+      sitio web, mientras que un enlace <strong>externo</strong> lleva a un
+      recurso fuera del dominio actual.
+    </p>
+
+    <h2>Ejemplos</h2>
+
+    
+
+    <h1>Enlaces en HTML: Conceptos y Buenas Prácticas</h1>
+
+    <p>
+      En el desarrollo web, los <strong>enlaces</strong> son fundamentales para
+      la navegación y la interconexión de contenidos. Un enlace permite a los
+      usuarios acceder a otras páginas web, archivos, o incluso secciones dentro
+      de la misma página. Se crean con la etiqueta <code>&lt;a&gt;</code>, que
+      significa "anchor" (ancla en inglés). Los enlaces no solo mejoran la
+      experiencia del usuario, sino que también ayudan a los motores de búsqueda
+      a indexar las páginas de manera efectiva.
+    </p>
+
+    <h2>Estructura de un Enlace</h2>
+
+    <p>
+      Un enlace básico en HTML se compone de un atributo
+      <strong>href</strong> (Hypertext Reference), que contiene la URL del
+      recurso al que apunta el enlace, y el texto que se muestra en la página.
+      El texto dentro de la etiqueta <code>&lt;a&gt;</code> es lo que el usuario
+      verá como clicable. Por ejemplo:
+    </p>
+
+    <code>
+      <a href="https://www.example.com">Visitar Example</a>
+    </code>
+
+    <p>
+      El atributo <code>href</code> puede contener URLs absolutas o relativas.
+      Una URL absoluta apunta a una página completa, incluyendo el protocolo
+      (<code>http://</code> o <code>https://</code>), el dominio y el archivo
+      específico. Por ejemplo:
+    </p>
+
+    <code>
+      <a href="https://www.example.com/pagina.html">Ver página específica</a>
+    </code>
+
+    <p>
+      Por otro lado, las URLs relativas se refieren a la ubicación del archivo
+      en relación con la página actual, lo que permite enlazar recursos dentro
+      del mismo sitio sin usar toda la ruta. Un ejemplo de una URL relativa
+      sería:
+    </p>
+
+    <code>
+      <a href="/carpeta/pagina.html">Ver página interna</a>
+    </code>
+
+    <h2>Enlaces Internos y Externos</h2>
+
+    <p>
+      En HTML, los enlaces se dividen en dos categorías principales:
+      <strong>enlaces internos</strong> y <strong>enlaces externos</strong>. Los
+      enlaces internos apuntan a una página o sección dentro del mismo sitio
+      web, lo que es útil para la navegación interna. Un ejemplo de un enlace
+      interno sería:
+    </p>
+
+    <code>
+      <a href="/about.html">Acerca de nosotros</a>
+    </code>
+
+    <p>
+      Este enlace llevará al usuario a una página dentro del mismo sitio. Para
+      enlazar a una sección específica dentro de una página, se puede utilizar
+      un <strong>enlace anclado</strong>. Esto se hace agregando un
+      identificador (<code>id</code>) al elemento de destino y luego enlazando a
+      él:
+    </p>
+
+    <code>
+      <a href="#seccion1">Ir a la sección 1</a>
+
+      <!-- En otra parte del documento -->
+      <h2 id="seccion1">Sección 1</h2>
+    </code>
+
+    <p>
+      Los enlaces externos, por otro lado, apuntan a recursos fuera del sitio
+      web. Estos son útiles para dirigir a los usuarios a información
+      complementaria en otros sitios. Un enlace externo podría verse de la
+      siguiente manera:
+    </p>
+
+    <code>
+      <a href="https://www.wikipedia.org">Visitar Wikipedia</a>
+    </code>
+
+    <h2>Atributos de los Enlaces</h2>
+
+    <p>
+      Además del atributo <code>href</code>, los enlaces en HTML pueden tener
+      otros atributos que modifican su comportamiento. Uno de los más utilizados
+      es <strong>target</strong>, que determina cómo se abrirá el enlace. Cuando
+      se usa el valor <code>_blank</code>, el enlace se abrirá en una nueva
+      pestaña o ventana del navegador:
+    </p>
+
+    <code>
+      <a href="https://www.example.com" target="_blank"
+        >Abrir en nueva pestaña</a
+      >
+    </code>
+
+    <p>
+      Esto es útil cuando no se quiere interrumpir la navegación en la página
+      actual. Otro atributo relevante es <strong>rel</strong>, que define la
+      relación entre la página actual y el enlace de destino. El valor
+      <code>noopener</code> o <code>noreferrer</code> se suele usar para mejorar
+      la seguridad cuando se abren enlaces externos en nuevas pestañas:
+    </p>
+
+    <code>
+      <a
+        href="https://www.example.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Enlace seguro</a
+      >
+    </code>
+
+    <h2 id="SEO">Enlaces y SEO</h2>
+
+    <p>
+      Los enlaces también juegan un papel importante en el
+      <strong>SEO</strong> (Optimización para Motores de Búsqueda). Los motores
+      de búsqueda utilizan los enlaces para rastrear y entender la estructura de
+      un sitio web. En este contexto, los enlaces internos son esenciales para
+      la arquitectura de la información, mientras que los enlaces externos
+      pueden aumentar la autoridad de un sitio, si provienen de fuentes
+      confiables.
+    </p>
+
+    <p>
+      Al utilizar enlaces, es importante prestar atención al texto del enlace,
+      conocido como <strong>anchor text</strong>. Este texto debe ser
+      descriptivo y relevante para el contenido al que se está vinculando. Por
+      ejemplo, en lugar de usar un texto genérico como "haz clic aquí", es
+      preferible algo más informativo como "leer más sobre optimización de
+      motores de búsqueda".
+    </p>
+
+    <h2>Conclusión</h2>
+
+    <p>
+      Los enlaces son una de las herramientas más poderosas y versátiles en
+      HTML. Desde la creación de menús de navegación hasta la construcción de
+      relaciones entre sitios web, los enlaces facilitan la navegación y mejoran
+      la experiencia del usuario. Utilizar correctamente los atributos como
+      <code>target</code>, <code>rel</code> y el texto del enlace es fundamental
+      para asegurar una buena usabilidad y un impacto positivo en SEO.
+    </p>
+
+    
+  </body>
+</html>

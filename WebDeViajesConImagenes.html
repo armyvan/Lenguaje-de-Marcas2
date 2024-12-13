@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora África - Guía de Viajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5a4e4e;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffe100;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffe100;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #000000;
+        }
+        /* Imágenes con sombras y marcos */
+        .img-bordered-shadow {
+            border: 5px solid #ffe100;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        /* Imágenes responsivas */
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Efecto hover en imágenes */
+        .hover-effect img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-effect img:hover {
+            transform: scale(1.1);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        /* Imagen con efecto de transición */
+        .img-transition {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        /* Imágenes responsivas en <picture> */
+        picture img {
+            width: 100%;
+            height: auto;
+        }
+        /* Lazy loading */
+        .lazy {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Viajes Ongombo</h1>
+    </header>
+
+    <nav>
+        <a href="WebViajes.html">Inicio</a>
+        <a href="WebDeViajesConImagenes.html">Imágenes demostrativas</a>
+        <a href="WebDeViajesConListas.html">Listas de actividades</a>
+        <a href="WebDeViajesFormulario.html">Planifica tu viaje</a>
+    </nav>
+
+    <main>
+
+        <!-- Sección Destinos Populares con imágenes -->
+        <h2>Destinos Populares</h2>
+
+        <!-- Imagen básica -->
+        <img src="https://st.depositphotos.com/1004061/2038/i/450/depositphotos_20386455-stock-photo-mount-kilimanjaro-savanna-in-amboseli.jpg" alt="Vista del Monte Kilimanjaro en Tanzania" class="img-bordered-shadow" />
+
+        <!-- Imagen con tamaño definido -->
+        <img src="https://munnsafaris.com/wp-content/uploads/2023/12/safari-en-Kenia-y-Zanzibar-300x200.jpg" width="300" height="200" alt="Safari en Kenia" />
+
+        <!-- Imagen optimizada (Explicación abajo) -->
+        <img src="https://emvvz8q7fgo.exactdn.com/wp-content/uploads/2008/05/piramides.jpg" alt="Pirámides de Egipto en formato WebP" class="lazy" loading="lazy" />
+
+        <!-- Imagen responsive usando <picture> -->
+        <h2>Imágenes Responsivas</h2>
+        <picture>
+            <source srcset="https://www.notasdeunviajero.com/wp-content/uploads/2019/02/amanecer-erg-chebbi-sahara-marruecos.jpg" media="(min-width: 800px)">
+            <source srcset="https://www.notasdeunviajero.com/wp-content/uploads/2019/02/amanecer-erg-chebbi-sahara-marruecos.jpg" media="(max-width: 799px)">
+            <img src="https://www.notasdeunviajero.com/wp-content/uploads/2019/02/amanecer-erg-chebbi-sahara-marruecos.jpg" alt="Atardecer en el desierto de Marruecos" class="responsive-img">
+        </picture>
+
+        <!-- Imagen que cambia con la orientación -->
+        <h2>Imágenes con orientación</h2>
+        <picture>
+            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIFHUym750PzifXhQehsv9a6-KwZSGl0hsnA&s" media="(orientation: landscape)">
+            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIFHUym750PzifXhQehsv9a6-KwZSGl0hsnA&s" media="(orientation: portrait)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIFHUym750PzifXhQehsv9a6-KwZSGl0hsnA&s" alt="Selva en Uganda" class="responsive-img">
+        </picture>
+
+        <!-- Sección Consejos de Viaje con imagen adaptativa -->
+        <h2>Consejos de Viaje</h2>
+        <img src="https://www.publico.es/viajes/excursiones/wp-content/uploads/2021/06/autobus-turistico-ciudad-cabo-vegetacion.jpg" alt="Autobús en Ciudad del Cabo" class="responsive-img" />
+
+        <!-- Imagen con efecto hover y transición -->
+        <div class="hover-effect">
+            <img src="https://onlyoneafrica.viajes/wp-content/uploads/2019/06/tourSAES01-600x400-1-300x200.jpg" alt="Excursión en África" class="img-transition" />
+        </div>        
+    </main>
+</body>
+</html>
+

@@ -1,0 +1,340 @@
+/* Estilos generales */
+body {
+    font-family:"Segoe IU", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bdbaba;
+}
+/* Estilos para el encabezado */
+header {
+    background-color: #000000   ;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size:50px;
+    font-weight: 200;
+}
+.logotipo{
+  width: 30%;
+}
+nav a {
+    color: #f10303;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 200;
+    font-family:"Segoe IU", sans-serif;
+    font-size: 35px;
+    border-radius: 20px;
+
+}
+
+nav a:hover {
+    background-color: #ffffff;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    background-color: #585858;
+    color: #fffcfc;
+}
+/*Secciones*/
+section {
+    margin-bottom: 20px;
+    font-size:larger;
+    font-weight: 200px;
+    font-family: "Segoe IU", sans-serif;
+    display: contents;
+}
+.inicio{
+  display: contents;
+  height: fit-content;
+  width:min-content ;
+}
+
+.tarjeta {
+  width: fit-content;
+  height: fit-content;
+  background: rgb(223, 225, 235);
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.productos{
+  font-family: "Segoe IU", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  display: grid;
+  background-color: #fefefe;
+  color: #000000;
+  border-radius: 12px;
+}
+.tituloProductos{
+  color: #f10303;
+  list-style:none;
+  font-family: "Segoe IU", sans-serif;
+  text-decoration: none;
+  background-color: #fefefe;
+  border-radius: 20px;
+  display:inline-block;
+}
+ 
+
+/*botón*/
+.tablasCrear {
+  --c: #000000;
+  text-decoration: none;
+  list-style: none;
+ /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #ffffff;
+  
+ /* background color */
+  color: #ffffff00;
+  border: none;
+  border-radius: 35px;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+  
+}
+
+.tablasCrear:hover,
+.tablasCrear:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+  text-decoration: none;
+  list-style:none;
+}
+
+.tablasCrear:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+  text-decoration: none;
+  list-style:none;
+}
+
+.tablasCrear {
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+  text-decoration: none;
+  list-style:none;
+}
+
+/*Página de inicio*/
+.inicio{
+  font-size: 50px;
+}
+.tituloInicio{
+  display: grid;
+  background-color: #fefefe;
+  color: #000000;
+  border-radius: 12px;
+}
+.filosofia {
+    column-fill: balance;
+    text-align: center;
+    column-gap: 50px;
+    column-rule: 2px solid var(--green-color);
+    height: fit-content;
+    margin: 10px;
+    width: fit-content;
+    font-size: 35px;
+    font-family: "Segoe IU", sans-serif;
+    font-style: italic;
+  }
+  .tituloFilosofia{
+    display: grid;
+    background-color: #fefefe;
+    color: #000000;
+    border-radius: 12px;
+  }
+  .roger{
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  }
+
+
+
+
+.servicios {
+  column-fill: balance;
+    text-align: justify;
+    column-gap: 50px;
+    column-rule: 2px solid var(--green-color);
+    height: fit-content;
+    margin: 10px;
+    width: fit-content;
+    display: flexbox;
+}
+
+/*Lista de artículos*/
+.listaPrecios{
+  font-size:35px;
+  font-weight: 700;
+  display:inline-flex;
+}
+dl {
+  color: #ff0037;
+  display: block;
+  
+}
+dt {
+  font-size: 50px;
+  display: block;
+  padding: 20px;
+  color: #bdbaba;
+}
+dd{
+  display: block;
+  background-color: #fefefe;
+}
+
+ul li{
+    color: #ffffff;
+    display: inline-block;
+    padding: 30px;
+    margin-left: 5px;
+    font-size: 40px;
+    font-variant: initial;
+    border-radius: 12px;
+}
+.colabs{
+
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.lista-colabs{
+  font-size: 70px;
+  padding: 20px;
+}
+.tituloColabs{
+  display: grid;
+  background-color: #fefefe;
+  color: #000000;
+  border-radius: 12px;
+  font-size: 50px;
+}
+form {
+  background-color: #000000;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  display:inline-flexbox;
+  text-align: center;
+
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 10px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.registro {
+  background-color: #4CAF50;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.titulo_socialmedia{
+  width: fit-content;
+  height: fit-content;
+  font-size: 35px;
+}
+.socialmedia{
+  width: fit-content;
+  height: fit-content;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_contacto{
+  font-family: "Segoe IU", sans-serif;
+  font-size: 50px;
+}
+.contacto{
+  font-size: 50px;
+}
+
+/*Parte de abajo de la página*/
+footer {
+    background-color: #8f8f8f;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+}

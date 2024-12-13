@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Selectores CSS</title>
+    <link rel="stylesheet" href="ejselectores.css">
+</head>
+
+<body>
+    <h1 id="main-header">Práctica de Selectores CSS</h1>
+
+    <section class="intro">
+        <h2>Introducción a los Selectores</h2>
+        <p class="alert">Párrafo de alerta que debe tener el texto rojo si cumple con las condiciones.</p>
+        <p class="menu-item">Este es un párrafo con la clase "menu-item".</p>
+        <p>Este es otro párrafo sin clase específica.</p>
+        
+    </section>
+
+    <section id="combinators">
+        <h2>Combinadores CSS</h2>
+        <h3>Combinadores avanzados</h3>
+        <div class="content-box">
+            <p>Este párrafo es hijo directo de un div con la clase "content-box".</p>
+            <span class="note">Nota importante dentro de content-box.</span>
+        </div>
+        <div class="highlight" data-section="important">
+            <a href="#" class="external-link">Enlace no incluido en la selección :not.</a>
+            <a href="#" data-type="info">Enlace con data-type="info".</a>
+            <p>Otro párrafo en un div con atributos específicos.</p>
+        </div>
+    </section>
+
+    <section>
+        <h3>Lista de Elementos</h3>
+        <ul class="nav-menu">
+            <li>Elemento 1</li>
+            <li class="admin" data-role="admin">Elemento Administrador 1</li>
+            <li>Elemento 2</li>
+            <li class="admin" data-role="admin">Elemento Administrador 2</li>
+            <li>Elemento 3</li>
+            <li class="user" data-role="user">Elemento Usuario 1</li>
+            <li>Elemento 4</li>
+            <li class="developer" data-role="developer">Elemento Dev 1</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Lista de Elementos</h3>
+        <ul>
+            <li>Elemento 1</li>
+            <li class="admin" data-role="admin">Elemento Administrador 1</li>
+            <li>Elemento 2</li>
+            <li class="admin" data-role="admin">Elemento Administrador 2</li>
+            <li>Elemento 3</li>
+            <li class="user" data-role="user">Elemento Usuario 1</li>
+            <li>Elemento 4</li>
+            <li class="developer" data-role="developer">Elemento Dev 1</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Formulario de Prueba</h2>
+        <div class="highlight">
+            <a href="#" data-type="info">Enlace con data-type="info".</a>
+            <br>
+            <input type="text" placeholder="Nombre">
+            <button class="submit-btn">Enviar</button>
+        </div>
+        <div>
+            <input type="text" placeholder="Apellido">
+        </div>
+    </section>
+
+    <div class="box">
+        <h3>Subtítulo dentro de un div con clase "box"</h3>
+        <h3>Otro subtítulo en la misma clase</h3>
+    </div>
+
+    <div class="box">
+        <h4>Subtítulo con h4</h4>
+        <span class="note">Texto dentro de un div que contiene un h4.</span>
+    </div>
+
+    <div>
+        <p>Este párrafo no tiene clase ni identificador.</p>
+        <p class="alert">Otro párrafo de alerta sin encabezado previo.</p>
+    </div>
+</body>
+
+</html>
