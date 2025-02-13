@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Imágenes</title>
+    <link rel="stylesheet" href="Actividad6.css">
+</head>
+<body>
+    //Esto es la pantalla principal con las dos imagenes 
+    <div class="container">
+        <img id="img1" src="image1a.jpg" onclick="selectImage('img1')">
+        <img id="img2" src="image2a.jpg" onclick="selectImage('img2')">
+    </div>
+    <div class="buttons" id="buttons"></div>
+    <!-- Boton de reset -->
+    <button id="resetButton" style="display: none; margin-top: 10px;" onclick="reset()">Restablecer</button>
+    <script>
+        let selectedImage = null;
+
+        function selectImage(id) {
+            selectedImage = document.getElementById(id);
+            let otherImage = id === 'img1' ? document.getElementById('img2') : document.getElementById('img1');
+            
+            selectedImage.classList.add('selected');
+            otherImage.style.display = 'none';
+            
+            let buttonsContainer = document.getElementById('buttons');
+            buttonsContainer.innerHTML = '';
+            buttonsContainer.style.display = 'block';
+
+            // Cambios de perspectiva 
+            if (id === 'img1') {
+                buttonsContainer.innerHTML += `<button onclick="changePerspective('img1', 'image1b.jpg')">Perspectiva 1</button>`;
+                buttonsContainer.innerHTML += `<button onclick="changePerspective('img1', 'image1c.jpg')">Perspectiva 2</button>`;
+            } else {
+                buttonsContainer.innerHTML += `<button onclick="changePerspective('img2', 'image2b.jpg')">Perspectiva 1</button>`;
+                buttonsContainer.innerHTML += `<button onclick="changePerspective('img2', 'image2c.jpg')">Perspectiva 2</button>`;
+            }
+
+            document.getElementById('resetButton').style.display = 'block';
+        }
+
+        function changePerspective(imgId, newSrc) {
+            if (selectedImage && selectedImage.id === imgId) {
+                selectedImage.src = newSrc;
+            }
+        }
+
+        function reset() {
+            document.getElementById('img1').style.display = 'block';
+            document.getElementById('img2').style.display = 'block';
+            document.getElementById('img1').classList.remove('selected');
+            document.getElementById('img2').classList.remove('selected');
+            document.getElementById('img1').src = 'image1a.jpg';
+            document.getElementById('img2').src = 'image2a.jpg';
+            document.getElementById('buttons').style.display = 'none';
+            document.getElementById('resetButton').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
